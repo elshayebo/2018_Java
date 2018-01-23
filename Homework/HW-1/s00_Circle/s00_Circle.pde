@@ -1,6 +1,6 @@
 /*
   Author: Omar Elshayeb
-  Cite: Worked with Jonathann Fishkin
+  Cite: Worked with Jonathan Fishkin
 */
 
 void setup () {
@@ -21,27 +21,29 @@ void draw() {
   ellipse(x,y,50,50);
   
   
-  if (y == BALL_SIZE/2) {
-   speedX = 3;
+  if (y <= BALL_SIZE/2) {
+   speedX = 5;
    speedY = 0;
    x = x + speedX;
    
   }
   
-  if(x > width - BALL_SIZE/2){
+  if(x >= width - BALL_SIZE/2){
     speedX = 0;
-    speedY=3;
+    speedY = 5;
     y = y + speedY;
   }
 
-  if (y > height - BALL_SIZE/2) {
+  if (y >= height - BALL_SIZE/2) {
   speedY = 0;
-  speedX= 3;
+  speedX= 5;
   x = x - speedX;
+  
   }
-  if (x == BALL_SIZE/2){
+  
+  if (x <= BALL_SIZE/2){
     speedX = 0;
-    speedY = 3;
+    speedY = 5;
     y = y - speedY;
   }
 }
