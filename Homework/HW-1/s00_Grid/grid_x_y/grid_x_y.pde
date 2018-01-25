@@ -1,0 +1,27 @@
+void setup() {
+  
+  size (800, 800);
+  
+}
+
+final int N = 4;
+int x = 0;
+int y = 0;
+
+void draw () {
+  
+    for ( float x = 0; x < width; x = x + (width-0.5)/N) {
+    line( x, 0, x, height);  
+    
+    }
+  
+  
+    for (float y = 0; y < height; y = y + (height-0.5)/N) {
+    line( 0 , y, width, y);
+    
+    
+    
+    }
+    
+    
+}
