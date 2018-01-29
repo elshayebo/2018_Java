@@ -1,10 +1,17 @@
+/* 
+  Author: Omar Elshayeb
+  
+*/
+
+
+
 void setup() {
   
   size (800, 800);
   
 }
 
-final int N = 4;
+final int N = 8;
 int x = 0;
 int y = 0;
 
